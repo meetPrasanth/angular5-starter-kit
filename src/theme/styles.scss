@@ -9,3 +9,12 @@ a{
 .title {
     color: $warn-color;
 }
+
+.bn {
+    background: $warn-color;
+    width: 75px;
+    height: 30px;
+    outline: none;
+    border: 0px;
+    color: white;
+}
