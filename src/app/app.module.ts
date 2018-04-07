@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 export const ROUTES: Routes = [
     { path: '', loadChildren: 'app/pages/pages.module#PagesModule' },
@@ -15,7 +16,8 @@ export const ROUTES: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
